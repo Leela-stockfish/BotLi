@@ -1,8 +1,8 @@
-token: "XXXXXXXXXXXXXXXXXXXXXXXX"         # Lichess OAuth2 Token.
+token: "lip_YC6JlQKb2Q2L9daBFn3G"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
   dir: "./engines"                        # Directory containing the engine.
-  name: "EngineName"                      # Binary name of the engine to use.
+  name: "stockfish.exe"                      # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   opening_books:
     enabled: false                        # Activate opening books.
@@ -41,7 +41,7 @@ engine:                                   # Engine settings.
     score: -1000                          # If the score is less than or equal to this value, the bot resigns (in cp).
     consecutive_moves: 5                  # How many moves in a row the score has to be below the resign value.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
-    Move Overhead: 100                    # Increase if your bot flags games too often.
+    Move Overhead: 1000                    # Increase if your bot flags games too often.
     Threads: 4                            # Max CPU threads the engine can use.
     Hash: 512                             # Max memory (in megabytes) the engine can allocate.
 #   SyzygyPath: "/path/to/syzygy"         # Path to your local syzygy endgame tablebases
